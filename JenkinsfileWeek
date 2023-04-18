@@ -1,24 +1,23 @@
 @Library('week_shared-lib') _
 pipeline {
      agent any
-    stages {
+     stages {
         stage ('Compile Stage') {
             agent {label 'built-in'}
             steps {
                 
                     bat 'mvn clean compile'
                     
-              
-                
             }
              stage('Demo') {
-            steps {
-                welcome("Sairaj")
+                 steps {
+                     welcome("Sairaj")
                 
-            }
+                 }
          
+            }
         }
 
-        }
     }
+}
 
