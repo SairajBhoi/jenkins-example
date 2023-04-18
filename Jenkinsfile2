@@ -16,7 +16,7 @@ node {
 
 
         stage ('Deployment Stage') {
-                    bat 'mvn install'
+                    bat 'mvn package'
         }
     
 }
