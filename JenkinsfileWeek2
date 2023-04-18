@@ -7,7 +7,9 @@ pipeline {
                     bat 'mvn package'
                 
             }
-            stage ('Mail report') {
+          }
+           
+           stage ('Mail report') {
             steps {
                  
                      mail bcc: '', body: 'Week Assignment Jenkins', cc: '', from: '', replyTo: '', subject: 'Weekassignment status', to: 'sairajbhoi2001@gmail.com'
@@ -15,6 +17,7 @@ pipeline {
             }
             
             }
+            
             }
-            }
+}
               
