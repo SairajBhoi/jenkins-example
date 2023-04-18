@@ -13,8 +13,7 @@ node {
         }
 
 
-        stage ('Deployment Stage') 
-                 
+        stage ('Deployment Stage') {
                     bat 'mvn install'
         }
     
