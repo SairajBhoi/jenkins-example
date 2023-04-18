@@ -1,0 +1,15 @@
+pipeline {
+     agent {label 'slave1'}
+    stages {
+        stage ('Compile Stage') {
+            agent {label 'built-in'}
+            steps {
+                
+                    bat 'mvn clean compile'
+                
+            }
+        }
+
+        }
+    }
+}
