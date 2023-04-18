@@ -21,7 +21,6 @@ pipeline {
 
 
         stage ('Deployment Stage') {
-               agent {label 'slave1'}
             steps {
                  
                     bat 'mvn package'
