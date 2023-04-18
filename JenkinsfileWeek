@@ -9,14 +9,14 @@ pipeline {
                     bat 'mvn clean compile'
                     
             }
-             stage('Demo') {
+        }
+        stage('Demo') {
                  steps {
                      welcome("Sairaj")
                 
                  }
          
             }
-        }
 
     }
 }
