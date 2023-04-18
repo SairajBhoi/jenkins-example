@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Demo') {
                  steps {
-                     welcome("Sairaj")
+                     Welcome("Sairaj")
                 
                  }
          
