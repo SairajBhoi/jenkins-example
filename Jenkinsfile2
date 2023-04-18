@@ -1,4 +1,8 @@
 node {
+        stage ('clone') {
+            git 'https://github.com/SairajBhoi/jenkins-example.git'
+        
+        }
     
         stage ('Compile Stage') {
                 
